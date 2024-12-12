@@ -17,5 +17,12 @@ class Program
         string task2Result = string.Join(",", task2.TransformArray([3,5,2,7,9]));
 
         Console.WriteLine(task2Result);
+        
+        //task3
+        Task3 task3 = new Task3();
+
+        string task3Result = $"[{string.Join(",", task3.FindMinimalGap([10, 2, 5, 12, 7]))}]";
+
+        Console.WriteLine(task3Result);
     }
 }
