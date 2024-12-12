@@ -9,7 +9,7 @@ class Program
         // task1
         Task1 task1 = new Task1();
 
-        Console.WriteLine(task1.formatArrayToString([9, 8, 15, 18]));
+        Console.WriteLine(task1.FormatArrayToString([9, 8, 15, 18]));
         
         //task2
         Task2 task2 = new Task2();
@@ -24,5 +24,13 @@ class Program
         string task3Result = $"[{string.Join(",", task3.FindMinimalGap([10, 2, 5, 12, 7]))}]";
 
         Console.WriteLine(task3Result);
+        
+        //task4
+        
+        Task4 task4 = new Task4();
+
+        string task4Result = $"[{string.Join(",", task4.EnemiesResult([10, 20, 130], [20, 10, 50]))}]";
+
+        Console.WriteLine(task4Result);
     }
 }

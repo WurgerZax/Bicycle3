@@ -12,7 +12,7 @@ public class Task1
         return letters[number - 1];
     }
 
-    public string formatArrayToString(byte[] array)
+    public string FormatArrayToString(byte[] array)
     {
         string str = string.Empty;
         
