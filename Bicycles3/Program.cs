@@ -73,5 +73,26 @@ class Program
         int[] indexesOfSum = task8.FindSumOfTwoInSortedArray([1, 2, 3, 5, 7, 8, 9, 15], 22);
 
         Console.WriteLine($"[{string.Join(",", indexesOfSum)}]");
+        
+        //task9
+        Task9 task9 = new Task9();
+        
+        int[] task9Result = task9.GenerateArrayOfRandomSortedNumbers(10, 0, 20);
+        
+        Console.WriteLine($"[{string.Join(",", task9Result)}]");
+        
+        //task10
+        Task10 task10 = new Task10();
+        
+        int[] task10Result = task10.GenerateArrayOfRandomUniqueNumbers(15, 0, 30);
+        
+        Console.WriteLine($"[{string.Join(",", task10Result)}]");
+        
+        //task11
+        Task11 task11 = new Task11();
+
+        int[] task11Result = task11.FibonacciGenerator(10);
+        
+        Console.WriteLine($"[{string.Join(",", task11Result)}]");
     }
 }
