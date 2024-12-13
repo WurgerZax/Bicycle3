@@ -52,5 +52,19 @@ class Program
         int[] peaks = task6.FindPeaks([10, 2, 5, 12, 7]);
 
         Console.WriteLine($"[{string.Join(",", peaks)}]");
+        
+        //task7
+        Task7 task7 = new Task7();
+        
+        int[] arrayWithExcessElement = [1, 3, 2, 4, 1, 5];
+        try
+        {
+            int[] splicedArray = task7.RemoveElementByIndex(arrayWithExcessElement, 2);
+            Console.WriteLine($"[{string.Join(",", splicedArray)}]");
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e.Message);
+        }
     }
 }

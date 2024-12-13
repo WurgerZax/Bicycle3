@@ -4,6 +4,8 @@ public class Task6
 {
     public int[] FindPeaks(int[] heights)
     {
+        var appendElementToArray = new UsefulFunctions().AppendElementToArray;
+        
         int[] peaks = new int[0];
         
         for (int i = 0; i < heights.Length; i++)
@@ -14,24 +16,10 @@ public class Task6
 
             if (peak > prevNeighbour && peak > nextNeighbour)
             {
-                peaks = AppendElementToArray(peaks, peak);
+                peaks = appendElementToArray(peaks, peak);
             }
         }
         
         return peaks;
-    }
-
-    private int[] AppendElementToArray(int[] array, int element)
-    {
-        int[] newArray = new int[array.Length + 1];
-        
-        for (int i = 0; i < array.Length; i++)
-        {
-            newArray[i] = array[i];
-        }
-        
-        newArray[array.Length] = element;
-
-        return newArray;
     }
 }
