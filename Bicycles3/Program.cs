@@ -45,5 +45,12 @@ class Program
         Console.WriteLine(task5Result);
         Console.WriteLine(encryptedMessage);
         Console.WriteLine("--task5--");
+        
+        //task6
+        Task6 task6 = new Task6();
+        
+        int[] peaks = task6.FindPeaks([10, 2, 5, 12, 7]);
+
+        Console.WriteLine($"[{string.Join(",", peaks)}]");
     }
 }

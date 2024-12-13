@@ -4,14 +4,14 @@ public class Task2
 {
     private bool IsPrime(int number)
     {
-        // in math numbers 0 and 1 is not prime; every even number will not be prime
+        // every even number will not be prime
         if (number % 2 == 0)
         {
             return false;
         } 
         if (number == 2)
         {
-            return true; // 2
+            return true; // 2 is 
         } 
         
         // pass array, but skip even numbers;
