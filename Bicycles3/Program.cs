@@ -66,5 +66,12 @@ class Program
         {
             Console.WriteLine(e.Message);
         }
+        
+        //task8
+        Task8 task8 = new Task8();
+
+        int[] indexesOfSum = task8.FindSumOfTwoInSortedArray([1, 2, 3, 5, 7, 8, 9, 15], 22);
+
+        Console.WriteLine($"[{string.Join(",", indexesOfSum)}]");
     }
 }
