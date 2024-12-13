@@ -26,11 +26,24 @@ class Program
         Console.WriteLine(task3Result);
         
         //task4
-        
         Task4 task4 = new Task4();
 
         string task4Result = $"[{string.Join(",", task4.EnemiesResult([10, 20, 130], [20, 10, 50]))}]";
 
         Console.WriteLine(task4Result);
+        
+        //task5
+        Task5 task5 = new Task5();
+
+        string messageForCaesar = "ALL IS READY TO ATTACK ROME AT 01.09.52";
+        
+        char[] encryptedMessage = task5.EncryptMessage(messageForCaesar.ToCharArray(), 3);
+        
+        string task5Result = $"[{string.Join(",", encryptedMessage)}]";
+
+        Console.WriteLine("--task5--");
+        Console.WriteLine(task5Result);
+        Console.WriteLine(encryptedMessage);
+        Console.WriteLine("--task5--");
     }
 }
